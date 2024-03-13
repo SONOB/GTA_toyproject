@@ -6,7 +6,7 @@ import pyautogui
 from PIL import ImageGrab
 from KBcmd import ReleaseKey, PressKey, K
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt')
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='./best.pt', force_reload=True)
 last_time = time.time()
 
 def shoot():
